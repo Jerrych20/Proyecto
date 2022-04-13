@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(169, 134, 202);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+   
+}
+
+.contenedor{
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;
+
+}
+div .nombrePasteleria{
+    
+    color: black;
+    text-align: right;
+    justify-content: flex-start;
+}
+
+.contenedor ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px ;
+    position: relative;
+
+}
+
+.contenedor ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Syne Mono', monospace;
+    font-size: 25px;
+
+
+}
+.contenedor ul li::before{
+    content:"";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+.contenedor ul li:hover::before{
+    width: 100%;
+}
+
+
+footer{
+   background-color: black;
+   color: white;
+   bottom: 0;
+   width: 100%;
+   margin-top: auto;
+
+}
+
+.eslogan{
+    text-align: center;
+    font-family: 'Freckle Face', cursive;
+    font-size: 250px;
+    color: rgb(209, 190, 123);
+   
+    top: 30%;
+    left: 10%;
+    right: 10%;   
+}
+
+.barraLogo2{
+    display: flex;
+    padding: 50px 50px 50px 50px;
+}
+
+.namePaste{
+ padding: 100px ;
+ font-size: 40px;
+}
+
+div nav ul li {
+    display: flex;
+    padding: 110px 100px 10px 20px;
+    justify-content: flex-end;
+   
+ 
+}
+
+div nav ul {
+   display: flex;
+   justify-content: right;
+}
+
+main{
+  align-items: center;
+}
+
+@media (min-width: 250px){
+
+    body{
+        flex-wrap: wrap;
+        
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
